@@ -11,7 +11,7 @@ const serveFile = async (res, filePath, contentType) => {
     res.writeHead(200, { 'Content-Type': contentType });
     res.end(data);
   } catch (error) {
-    res.writeHead(400, { 'Content-Type': contentType || 'text/plain' });
+    res.writeHead(400, { 'Content-Type': contentType  });
     res.end('400 page not found');
   }
 };
